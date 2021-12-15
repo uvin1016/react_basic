@@ -1,12 +1,11 @@
 import './css/style.css';
-import {Logo, Menu} from './components/Layout';
+import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <figure>
-      <Logo />
-      <Menu />
+      <Header />
 
       <Footer />
     </figure>
