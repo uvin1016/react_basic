@@ -1,14 +1,14 @@
 import './css/style.css';
+import {Logo, Menu} from './components/Layout';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <figure>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <Logo />
+      <Menu />
+
+      <Footer />
     </figure>
   );
 }
