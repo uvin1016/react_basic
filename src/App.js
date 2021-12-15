@@ -4,16 +4,25 @@ import Footer from './components/Footer';
 
 
 function App() {
-  let divStyle = {width: 100, height: 100, backgroundImage: `url(${process.env.PUBLIC_URL+'img/member2.jpg'})`, backgroundSize: "cover"};
+  let picImg = {backgroundImage: `url(${process.env.PUBLIC_URL}/img/member1.jpg)`}
+
   return (
     <figure>
       <Header />
-          <img src={process.env.PUBLIC_URL+'img/member1.jpg'} />
-          <img src={process.env.PUBLIC_URL+'img/member2.jpg'} />
+        <section>
+          <article>
+            <div className="inner">
+              <div className="pic" style={picImg}>
+                <div className="dot"></div>
+              </div>
 
-          <div style={divStyle}>
-
-          </div>
+              <div className="txt">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </article>
+        </section>
       <Footer />
     </figure>
   );
