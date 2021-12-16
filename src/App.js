@@ -10,13 +10,15 @@ function App() {
   const deg = 360/arr.length;
   let [txt, setTxt] = useState(arr);
 
-  return (
-    <figure>
-      <button onClick={()=>{
-        let txt2 = [...txt];
+  function changeState(){
+    let txt2 = [...txt];
         txt2[0] = 'member7';
         setTxt(txt2);
-      }}>버튼</button>
+  }
+
+  return (
+    <figure>
+      <button onClick={()=>{changeState}}>버튼</button>
       <Header />
         <section>
           {
