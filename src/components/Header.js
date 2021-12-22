@@ -2,7 +2,7 @@ function Header(){
     return (
         <>
             <h1>
-                <strong>DCODELAB</strong><br />
+                <strong>DCODELAB5</strong><br />
                 <span>UI/UX DESIGN & DEVELOPMENT</span>
             </h1>
 
